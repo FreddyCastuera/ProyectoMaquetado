@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.c1 {
+  border: 5px solid red;
+  width: 80%;
+  margin: 10px;
+}
+
+.c2 {
+  border: 5px solid black;
+  margin: 10px;
+}
+
+.c3 {
+  border: 5px solid blue;
+  margin: 10px;
+}/*# sourceMappingURL=styles.css.map */
