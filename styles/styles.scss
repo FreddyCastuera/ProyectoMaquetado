@@ -11,8 +11,7 @@ body{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-entro: 314px;
-}
+    
 .c1{
     border:5px solid red;
     width:80%;
@@ -29,20 +28,34 @@ entro: 314px;
 header{
     display:flex;
     justify-content: space-between;
-    div.hamburger{
-        width: 20px;
-        height: 20px;
-        margin: 1% 1%;
-        display:flex;
-        flex-direction: column;
+    flex-direction: column;
+    justify-content: flex-start;
+    div.logo-close{
+        display: flex;
         justify-content: space-around;
-        .line{
-            width: 80%;
-            height: 20%;
-            background-color: black;
-            margin:5% 10%
+        div.button>input:checked{
+            background-color: red;
         }
-
+ 
+    }
+    nav{
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        ul{
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            li{
+                width: 100%;
+            }
+        }
+        div.social{
+            border:1px solid black;
+        }
     }
 }
 footer{
@@ -107,4 +120,6 @@ footer{
             justify-content: space-between;
         }
     }
+}
+
 }
