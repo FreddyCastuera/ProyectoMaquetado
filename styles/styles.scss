@@ -93,6 +93,8 @@ body{
 
 
 
+
+
     footer{
         height: 100vh;
         display:flex;
@@ -165,13 +167,45 @@ body{
     display:flex;
     flex-direction: column;
     align-items: center;
+    input{
+        display:none;
+    }
     input#opcion1:checked ~ div.opcion1{
+        background-color: purple;
         display: block;
     }
     input#opcion2:checked ~ div.opcion2{
+        background-color: yellow;
         display: block;
     }
     input#opcion3:checked ~ div.opcion3{
+        background-color: orange;
+
         display: block;
     }
+}
+
+.questions{
+    display: flex;
+    flex-direction: column;
+    
+}
+.question{
+    display:flex;
+    justify-content: flex-start;
+    flex-wrap:wrap;
+    label{
+        background-color: yellow;
+    }
+    input{
+        display:none;
+    }
+}
+.answer{
+    display:none;
+    margin-top:20px;
+}
+
+input[name="answer"]:checked + div{
+    display:block;
 }

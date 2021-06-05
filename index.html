@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/styles.css">
-
 </head>
 <body>
     <header  class="c1">
@@ -27,7 +26,6 @@
             </nav>
         </div>
     </header>
-
     <main  class="c1">
         <section class="simple c2">
             <div class="image-tablet c3">imagen</div>
@@ -40,7 +38,6 @@
                     <div class="button"><P>Get it on Firefox</P></div>
                 </div>
             </section>
-
         </section>
         <section class="features c2">
             <div class="c3">
@@ -48,10 +45,13 @@
              <p>Our aim is to make it quick and easy for you to access  your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
             </div>
              <div class = "contenedor-dinamico">
-                <label for="opcion1">Simple Bookmarking</label><input type="radio" value="opcion1" id="opcion1" name="opciones">
-                <label for="opcion2">Speedy Seraching</label><input type="radio" value="opcion2" id="opcion2" name="opciones">
-                <label for="opcion3">Easy Sharing</label><input type="radio" value="opcion3" id="opcion3" name="opciones">
-               
+                <label for="opcion1">Simple Bookmarking</label>
+                <input type="radio" value="opcion1" id="opcion1" name="opciones">
+                <label for="opcion2">Speedy Seraching</label>
+                <input type="radio" value="opcion2" id="opcion2" name="opciones">
+                <label for="opcion3">Easy Sharing</label>
+                <input type="radio" value="opcion3" id="opcion3" name="opciones">
+            
                 <div class="image-page c3 opciones opcion1">
                     <h1>ESTA ES LA OPCION 1</h1>
                     <h2>Bookmark in one click</h2>
@@ -59,7 +59,6 @@
                 </div>
                 <div class="image-page c3 opciones  opcion2">
                     <h1>ESTA ES LA OPCION 2</h1>
-
                     <h2>Bookmark in one click</h2>
                     <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favorites sites.</p>
                 </div>
@@ -109,12 +108,38 @@
                 <h2>Frequently Asked Questions</h2>
                 <p>Here are some of our FAQs. if you have any other question you would like answered please feel free to email us.</p>
             </div>
-            <ul class="c3">
-                <li>What is Bookmarks</li>
-                <li>How can i request a new browser</li>
-                <li>Is there a mobile app</li>
-                <li>What about other Chromium browsers</li>
+            <form action="">
+            <ul class="questions c3">
+                <li class="question">
+                    <label for="answer1">What is Bookmarks?</label> 
+                    <input type="radio" name="answer" id="answer1">
+                    <div class="answer">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem deserunt atque sed temporibus numquam. Voluptatum sint sequi nisi repudiandae iste, ducimus consequatur, provident libero quisquam voluptatem nam, quasi sit labore.</p>
+                    </div>  
+                </li>
+                <li class="question">
+                    <label for="answer2">How can i request a new browser?</label>
+                    <input type="radio" name="answer" id="answer2">
+                    <div class="answer">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis in ullam, deserunt, sequi rem voluptate voluptas molestias quasi ab dicta sunt dolor repudiandae. Sapiente ipsum assumenda quidem ea quasi quam.</p>
+                    </div>
+                </li>
+                <li class="question">
+                    <label for="answer3">Is there a mobile app?</label>
+                    <input type="radio" name="answer" id="answer3">
+                    <div class="answer">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio molestiae maiores, inventore sit quaerat atque voluptatibus iste et. Repellat pariatur perferendis illo nobis corporis ut enim mollitia natus vero nam!</p>
+                    </div>
+                </li>
+                <li class="question">
+                    <label for="answer4">What about other Chromium browsers?</label>
+                    <input type="radio" name="answer" id="answer4">
+                    <div class="answer">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla porro optio consequatur? Voluptatum tenetur suscipit non eos rerum. Voluptates repellat libero ratione possimus fuga optio beatae ducimus eum culpa. Error?</p>
+                    </div>
+                </li>
             </ul>
+            </form>
             <div class="c3"><p>More Info</p></div>
         </section>
     </main>
