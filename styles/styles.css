@@ -31,33 +31,63 @@ body header {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: flex-start;
 }
 body header div.logo-close {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-body header div.logo-close div.button > input:checked {
-  background-color: red;
+body header div.logo-close div.image {
+  width: 50%;
 }
-body header nav {
-  height: 90vh;
+body header div.logo-close input {
+  width: 50%;
+}
+body header div.logo-close nav {
+  background-color: #242946;
+  opacity: 0.9;
+  position: fixed;
+  left: 0;
+  top: 6%;
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid black;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
-body header nav ul {
-  height: 60%;
+body header div.logo-close nav ul {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  height: 60%;
+  margin-bottom: 40%;
+}
+body header div.logo-close nav ul li {
+  border-top: 1px solid white;
+}
+body header div.logo-close nav ul li button {
+  margin-top: 10%;
+  width: 300px;
+  height: 50px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 0.5em;
+}
+body header div.logo-close nav ul li button:hover {
+  border: 1px solid white;
+}
+body header div.logo-close nav div.social {
+  display: flex;
   justify-content: space-between;
+  width: 20%;
 }
-body header nav ul li {
-  width: 100%;
-}
-body header nav div.social {
-  border: 1px solid black;
+body header div.logo-close input:checked + nav {
+  display: none;
 }
 body footer {
   height: 100vh;
