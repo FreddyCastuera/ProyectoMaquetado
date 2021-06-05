@@ -39,7 +39,10 @@ body{
                 width: 50%;
             }
             input{
-                width: 50%;
+                position:relative;
+                right:5%;
+                width: 20px;
+
             }
             nav{
                 background-color: #242946;
@@ -72,27 +75,23 @@ body{
                             border-radius: .5em;
                             &:hover{
                                 border:1px solid white;
-
                             }
                         }
-                        
                     }
-                    
                 }
                 div.social{
                     display: flex;
                     justify-content: space-between;
                     width: 20%;
-                    
-
                 }
-                
             }
             input:checked + nav{
                 display: none;
             }
         }
     }
+
+
 
     footer{
         height: 100vh;
@@ -156,5 +155,23 @@ body{
             }
         }
     }
+}
 
+.opciones{
+    display:none;
+}
+
+.contenedor-dinamico{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    input#opcion1:checked ~ div.opcion1{
+        display: block;
+    }
+    input#opcion2:checked ~ div.opcion2{
+        display: block;
+    }
+    input#opcion3:checked ~ div.opcion3{
+        display: block;
+    }
 }

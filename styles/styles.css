@@ -43,7 +43,9 @@ body header div.logo-close div.image {
   width: 50%;
 }
 body header div.logo-close input {
-  width: 50%;
+  position: relative;
+  right: 5%;
+  width: 20px;
 }
 body header div.logo-close nav {
   background-color: #242946;
@@ -150,4 +152,23 @@ body footer div.contact div.social {
   width: 25%;
   display: flex;
   justify-content: space-between;
+}
+
+.opciones {
+  display: none;
+}
+
+.contenedor-dinamico {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contenedor-dinamico input#opcion1:checked ~ div.opcion1 {
+  display: block;
+}
+.contenedor-dinamico input#opcion2:checked ~ div.opcion2 {
+  display: block;
+}
+.contenedor-dinamico input#opcion3:checked ~ div.opcion3 {
+  display: block;
 }/*# sourceMappingURL=styles.css.map */
