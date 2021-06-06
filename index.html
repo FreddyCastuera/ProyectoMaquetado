@@ -6,98 +6,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet"> 
 
 </head>
 <body>
     <header  class="c1">
-        <img class="bookmark" src="" alt="imagen">
-        <div class="hamburger">boton</div>
+        <img class="bookmark" src="imagenes/logo-bookmark.svg" alt="imagen">
+        <img class="burger" src="imagenes/icon-hamburger.svg" alt="">
+        <nav class="navigation">
+            <button>FEATURES</button>
+            <button>PRINCING</button>
+            <button>CONTACT</button>
+            <button>LOGIN</button>            
+        </nav>
     </header>
     <main  class="c1">
         <section class="simple c2">
-            <div class="image-tablet c3">imagen</div>
-            <section class="c3">
+            <img class="image-tablet c3" src="imagenes/illustration-hero.svg" alt="">
+            <section class="simple-text general-text c3">
                 <h1>A Simple Bookmark Manager</h1>
                 <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your site load instantly. Try if for free.</p>
-                <div>
-                    <div class="button"><P>Get if on Chrome</P></div>
-                    <div class="button"><P>Get it on Firefox</P></div>
+                <div class = "simple-buttons c4">
+                    <button class="button"><P>Get if on Chrome</P></button>
+                    <button class="button"><P>Get it on Firefox</P></button>
                 </div>
             </section>
-
         </section>
         <section class="features c2">
-            <div class="c3">
-             <h2>Feature</h2>
-             <p>Our aim is to make it quick and easy for you to access  your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+            <div class="c3 general-text">
+                <h2>Feature</h2>
+                 <p>Our aim is to make it quick and easy for you to access  your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
             </div>
-             <ul class="c3">
-                <li>Simple Bookmarking</li>
-                <li>Speedy Search</li>
-                <li>Easy Sharing</li>
-            </ul>
-            <div class="image-page c3">
-                imagen
-                <h2>Bookmark in one click</h2>
-                <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favorites sites.</p>
+             <div class="c3 options">
+                <label for="opcion1" class=""><p>Simple Bookmarking</p></label><input type="radio" id="opcion1" name="opcion">
+                <label for="opcion2" class=""><p>Speedy Search</p></label><input type="radio" id="opcion2" name="opcion">
+                <label for="opcion3" class=""><p>Easy Sharing</p></label><input type="radio" id="opcion3" name="opcion">
+
+                <div class="container-image-aside c4 tab1">
+                    <img class="image-page c5" src="imagenes/illustration-features-tab-1.svg" alt="">
+                    <div class="aside-image general-text c5">
+                        <h2>Bookmark in one click</h2>
+                        <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favorites sites.</p>
+                        </div>
+                </div>
+                <div class="container-image-aside c4 tab2">
+                    <img class="image-page c5" src="imagenes/illustration-features-tab-2.svg" alt="">
+                    <div class="aside-image general-text c5">
+                        <h2>Intelligent search</h2>
+                        <p>Our powerful search feature wil help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                    </div>
+                </div>
+                <div class="container-image-aside c4 tab3">
+                    <img class="image-page c5" src="imagenes/illustration-features-tab-3.svg" alt="">
+                    <div class="aside-image general-text c5">
+                        <h2>Chare your bookmarks</h2>
+                        <p>Easily share your bookmarks and collections with others. Creates a shareble link that you can send at the click of a button.</p>
+                        </div>
+                </div>
             </div>
-           
         </section>
         <section class="download c2">
-            <h2>Download the extension</h2>
-            <p>we have got more browsers in the pipeline please do let us know if you have a favorite you woud like us to prioritize.</p>
-            <section class="download-browsers">
-                <article class="c3">
-                    <img src="" alt="">
-                    <h2>Add to Chrome</h2>
-                    <p>Minimum version 62</p>
-                    <div><p>Add & install Extension</p></div>
+            <div class="c3 general-text">
+                <h2>Download the extension</h2>
+                 <p>we have got more browsers in the pipeline please do let us know if you have a favorite you woud like us to prioritize.</p>
+            </div>
+            <section class="download-browsers c3">
+                <article class="c4 chrome browser">
+                    <img src="imagenes/logo-chrome.svg" alt="">
+                    <div>
+                        <h2>Add to Chrome</h2>
+                        <p>Minimum version 62</p>
+                    </div>
+                    <img class="dots" src="imagenes/bg-dots.svg" alt="">
+                    <button><p>Add & install Extension</p></button>
                 </article>
-                <article class="c3">
-                    <img src="" alt="">
-                    <h2>Add to Firefox</h2>
-                    <p>Minimum version 55</p>
-                    <div><p>Add & install Extension</p></div>
+                <article class="c4 firefox browser">
+                    <img src="imagenes/logo-firefox.svg" alt="">
+                    <div>
+                        <h2>Add to Firefox</h2>
+                        <p>Minimum version 55</p>
+                    </div>
+                    <img class="dots" src="imagenes/bg-dots.svg" alt="">
+                    <button><p>Add & install Extension</p></button>
                 </article>
-                <article class="c3">
-                    <img src="" alt="">
-                    <h2>Add to Opera</h2>
-                    <p>minimum version 46</p>
-                    <div><p>Add & install Extension</p></div>
+                <article class="c4 opera browser">
+                    <img src="imagenes/logo-opera.svg" alt="">
+                    <div>
+                        <h2>Add to Opera</h2>
+                        <p>minimum version 46</p>
+                    </div>
+                    <img class="dots" src="imagenes/bg-dots.svg" alt="">                    
+                    <button><p>Add & install Extension</p></button>
                 </article>
             </section>
         </section>
         <section class="frequently c2">
-            <div class="c3">
+            <div class="c3 general-text">
                 <h2>Frequently Asked Questions</h2>
                 <p>Here are some of our FAQs. if you have any other question you would like answered please feel free to email us.</p>
             </div>
-            <ul class="c3">
-                <li>What is Bookmarks</li>
-                <li>How can i request a new browser</li>
-                <li>Is there a mobile app</li>
-                <li>What about other Chromium browsers</li>
-            </ul>
-            <div><p>More Info</p></div>
+            <div class="questions c3">
+                <input type="radio" name="question" checked>
+                <label for="question1">What is Bookmarks</label><input type="radio" name="question" id="question1">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod exercitationem iusto architecto labore sint laudantium explicabo quam expedita rerum perferendis, veniam maxime quisquam doloribus consequuntur odio similique sunt beatae aperiam.</p>               
+                <label for="question2">How can i request a new browser</label><input type="radio" name="question" id="question2">
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum laborum illum tempore voluptas itaque ipsa nihil, ea excepturi obcaecati fugit ipsam nam id quam animi debitis aliquam voluptate, rerum minus.</p>
+                <label for="question3">Is there a mobile app</label><input type="radio" name="question" id="question3">
+                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus suscipit consequuntur atque repellat dolor, fugiat pariatur tempora quis commodi repellendus explicabo aspernatur dolorum? Corrupti, fuga. Atque reprehenderit deleniti quam nobis.</p>
+                <label for="question4">What about other Chromium browsers</label><input type="radio" name="question" id="question4">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates architecto, hic perspiciatis veniam obcaecati quisquam dolores repellat asperiores tempore at itaque voluptatum assumenda rem, quidem nulla! Repellat sequi similique labore?</p>
+            </div>
+            <button class="c3"><p></p>More Info</p></button>
         </section>
     </main>
     <footer class="c1">
-        <p>35.000 ALREADY JOINED</p>
-        <h2>Stay up-to-date with what we are doing</h2>
-        <form action="">
-            <input type="text" placeholder="Enter you email address">
-            <div>Contact Us</div>
-        </form>
-        <section class="contact">
-            <img src="" alt="">
-            <ul>
-                <li>FEATURES</li>
-                <li>PRICING</li>
-                <li>CONTACT</li>
-            </ul>
-            <div>
-                <img src="" alt="">
-                <img src="" alt="">
+        <section class="form c2">
+            <p class="c3">35.000 ALREADY JOINED</p>
+            <h2 class="c3">Stay up-to-date with what we are doing</h2>
+            <input class="c3" type="text" placeholder="Enter you email address">
+            <button class="c3">Contact Us</button>
+        </section>
+        <section class="contact c2">
+            <img class="c3 bookmark" src="imagenes/logo-bookmark.svg" alt="">
+            <div class="c3 link-list">
+                <div><a href="">FEATURES</a></div>
+                <div><a href="">PRICING</a></div>
+                <div><a href="">CONTACT</a></div>
+            </div>
+            <div class="c3">
+                <img src="imagenes/icon-facebook.svg" alt="">
+                <img src="imagenes/icon-twitter.svg" alt="">
             </div>
         </section>
     </footer>
