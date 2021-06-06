@@ -193,8 +193,7 @@ body footer div.contact div.social {
   flex-wrap: wrap;
 }
 .question label {
-  background-color: yellow;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   border-bottom: 1px solid black;
   width: 100%;
 }
@@ -215,5 +214,55 @@ input[name=answer]:checked + div {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+.frequently-asked h2 {
+  margin: 5%;
+  margin-bottom: 0;
+}
+.frequently-asked p {
+  text-align: center;
+  margin: 5%;
+  font-size: 1.6em;
+}
+
+.download-browsers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 5px solid blue;
+}
+.download-browsers .browser {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid green;
+  margin: 2% 0;
+  padding: 15% 0;
+}
+.download-browsers .browser img {
+  margin: 10% 0;
+}
+.download-browsers .browser h2 {
+  margin-bottom: 5%;
+}
+.download-browsers .browser div {
+  background-color: #5266df;
+  width: 200px;
+  height: 40px;
+  border-radius: 0.5em;
+}
+.download-browsers .browser div p {
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+}
+
+.download {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
 }/*# sourceMappingURL=styles.css.map */

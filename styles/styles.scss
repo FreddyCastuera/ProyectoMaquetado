@@ -200,8 +200,7 @@ body{
     justify-content: flex-start;
     flex-wrap:wrap;
     label{
-        background-color: yellow;
-        padding-bottom: 5px;
+        padding-bottom: 10px;
         border-bottom: 1px solid black;
         width: 100%;
     }
@@ -223,5 +222,54 @@ input[name="answer"]:checked + div{
     display:flex;
     flex-direction: column;
     justify-content:center;
+    align-items: center;
+    h2{
+        margin: 5%;
+        margin-bottom: 0;
+    }
+    p{
+        text-align: center;
+        margin: 5%;
+        font-size: 1.6em;
+    }
+}
+.download-browsers{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border:5px solid blue;
+    .browser{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border:2px solid green;
+        margin: 2% 0 ;
+        padding: 15% 0;
+        img{
+            margin: 10% 0;
+        }
+        h2{
+            margin-bottom:5%;
+            }
+        div{
+            background-color: #5266df;
+            width: 200px;
+            height: 40px;
+            border-radius: 0.5em;
+
+            p{
+                margin-top:10px;
+                color:white;
+                text-align: center;
+            }
+        }
+    }
+}
+.download{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
 }
