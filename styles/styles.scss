@@ -159,8 +159,20 @@ body{
     }
 }
 
+
 .opciones{
     display:none;
+    flex-direction: column;
+    div.image-container{
+        border:5px solid green;
+    }
+    h2{
+        border:5px solid purple;
+    }
+    p{
+        border:5px solid yellow;
+    }
+
 }
 
 .contenedor-dinamico{
@@ -171,17 +183,66 @@ body{
         display:none;
     }
     input#opcion1:checked ~ div.opcion1{
-        background-color: purple;
-        display: block;
+        display: flex;
+        div.image-container{
+            position: relative;
+            height: 380px;
+            img{
+                position:absolute;
+                right:0;
+                width: 90%;
+                height: 320px;
+            }
+            div.contenedor-azul{
+                position:absolute;
+                bottom:0;
+                background-color: #5266df;
+                border:1px solid black;
+                width: 85%;
+                height: 300px;
+                border-bottom-right-radius: 30%;
+                z-index:-1;
+            }
+        }
+        h2{
+            align-self: center;
+        }
+        p{
+            align-self: center;
+            text-align: center;
+        }
     }
     input#opcion2:checked ~ div.opcion2{
-        background-color: yellow;
         display: block;
     }
     input#opcion3:checked ~ div.opcion3{
-        background-color: orange;
 
         display: block;
+    }
+    label{
+        width: 90%;
+        margin: 2% 0;
+        text-align: center;
+        border-bottom: 2px solid black;
+
+        display:flex;
+        justify-content: center;
+        p{
+            font-size: 1.5em;
+            width: 50%;
+            overflow: visible;
+            padding: 5% 0;
+        }
+    }
+    label:hover{
+        p{
+            border-bottom:7px solid tomato;
+        }
+    }
+    
+    label:first-child{
+        border-top:1px solid black;
+        padding-top: 5%;
     }
 }
 

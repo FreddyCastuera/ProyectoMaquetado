@@ -156,6 +156,16 @@ body footer div.contact div.social {
 
 .opciones {
   display: none;
+  flex-direction: column;
+}
+.opciones div.image-container {
+  border: 5px solid green;
+}
+.opciones h2 {
+  border: 5px solid purple;
+}
+.opciones p {
+  border: 5px solid yellow;
 }
 
 .contenedor-dinamico {
@@ -167,16 +177,61 @@ body footer div.contact div.social {
   display: none;
 }
 .contenedor-dinamico input#opcion1:checked ~ div.opcion1 {
-  background-color: purple;
-  display: block;
+  display: flex;
+}
+.contenedor-dinamico input#opcion1:checked ~ div.opcion1 div.image-container {
+  position: relative;
+  height: 380px;
+}
+.contenedor-dinamico input#opcion1:checked ~ div.opcion1 div.image-container img {
+  position: absolute;
+  right: 0;
+  width: 90%;
+  height: 320px;
+}
+.contenedor-dinamico input#opcion1:checked ~ div.opcion1 div.image-container div.contenedor-azul {
+  position: absolute;
+  bottom: 0;
+  background-color: #5266df;
+  border: 1px solid black;
+  width: 85%;
+  height: 300px;
+  border-bottom-right-radius: 30%;
+  z-index: -1;
+}
+.contenedor-dinamico input#opcion1:checked ~ div.opcion1 h2 {
+  align-self: center;
+}
+.contenedor-dinamico input#opcion1:checked ~ div.opcion1 p {
+  align-self: center;
+  text-align: center;
 }
 .contenedor-dinamico input#opcion2:checked ~ div.opcion2 {
-  background-color: yellow;
   display: block;
 }
 .contenedor-dinamico input#opcion3:checked ~ div.opcion3 {
-  background-color: orange;
   display: block;
+}
+.contenedor-dinamico label {
+  width: 90%;
+  margin: 2% 0;
+  text-align: center;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: center;
+}
+.contenedor-dinamico label p {
+  font-size: 1.5em;
+  width: 50%;
+  overflow: visible;
+  padding: 5% 0;
+}
+.contenedor-dinamico label:hover p {
+  border-bottom: 7px solid tomato;
+}
+.contenedor-dinamico label:first-child {
+  border-top: 1px solid black;
+  padding-top: 5%;
 }
 
 .questions {
