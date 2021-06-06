@@ -188,6 +188,11 @@ body{
 .questions{
     display: flex;
     flex-direction: column;
+    li{
+        label,div.answer{
+            margin: 2%;
+        }
+    }
     
 }
 .question{
@@ -196,10 +201,14 @@ body{
     flex-wrap:wrap;
     label{
         background-color: yellow;
+        padding-bottom: 5px;
+        border-bottom: 1px solid black;
+        width: 100%;
     }
     input{
         display:none;
     }
+
 }
 .answer{
     display:none;
@@ -208,4 +217,11 @@ body{
 
 input[name="answer"]:checked + div{
     display:block;
+}
+
+.frequently-asked{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
 }

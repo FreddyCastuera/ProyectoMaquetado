@@ -183,6 +183,9 @@ body footer div.contact div.social {
   display: flex;
   flex-direction: column;
 }
+.questions li label, .questions li div.answer {
+  margin: 2%;
+}
 
 .question {
   display: flex;
@@ -191,6 +194,9 @@ body footer div.contact div.social {
 }
 .question label {
   background-color: yellow;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+  width: 100%;
 }
 .question input {
   display: none;
@@ -203,4 +209,11 @@ body footer div.contact div.social {
 
 input[name=answer]:checked + div {
   display: block;
+}
+
+.frequently-asked {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=styles.css.map */
