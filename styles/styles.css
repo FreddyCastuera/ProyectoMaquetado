@@ -15,16 +15,16 @@ body {
   align-items: center;
 }
 body .c1 {
-  /*border:5px solid red;*/
+  border: 5px solid red;
   width: 80%;
   margin: 10px;
 }
 body .c2 {
-  /* border:5px solid black;*/
+  border: 5px solid black;
   margin: 10px;
 }
 body .c3 {
-  /*border:5px solid blue;*/
+  border: 5px solid blue;
   margin: 10px;
 }
 body header {
@@ -159,10 +159,10 @@ body footer div.contact div.social {
   flex-direction: column;
 }
 .opciones div.image-container {
-  /* border:5px solid green;*/
+  border: 5px solid green;
 }
 .opciones h2 {
-  /*border:5px solid purple;*/
+  border: 5px solid purple;
   margin-top: 5%;
   margin-bottom: 5%;
   width: 100%;
@@ -170,7 +170,7 @@ body footer div.contact div.social {
   font-size: 200%;
 }
 .opciones p {
-  /*border:5px solid yellow;*/
+  border: 5px solid yellow;
   line-height: 1.5;
   font-size: 170%;
 }
@@ -353,4 +353,15 @@ section.download div p {
   text-align: center;
   line-height: 1.5;
   font-size: 1.7em;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-color: chartreuse;
+  }
+
+  .contenedor-dinamico {
+    display: flex;
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=styles.css.map */
