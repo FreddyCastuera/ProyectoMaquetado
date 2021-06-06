@@ -15,16 +15,16 @@ body {
   align-items: center;
 }
 body .c1 {
-  border: 5px solid red;
+  /*border:5px solid red;*/
   width: 80%;
   margin: 10px;
 }
 body .c2 {
-  border: 5px solid black;
+  /* border:5px solid black;*/
   margin: 10px;
 }
 body .c3 {
-  border: 5px solid blue;
+  /*border:5px solid blue;*/
   margin: 10px;
 }
 body header {
@@ -159,13 +159,20 @@ body footer div.contact div.social {
   flex-direction: column;
 }
 .opciones div.image-container {
-  border: 5px solid green;
+  /* border:5px solid green;*/
 }
 .opciones h2 {
-  border: 5px solid purple;
+  /*border:5px solid purple;*/
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+  text-align: center;
+  font-size: 200%;
 }
 .opciones p {
-  border: 5px solid yellow;
+  /*border:5px solid yellow;*/
+  line-height: 1.5;
+  font-size: 170%;
 }
 
 .contenedor-dinamico {
@@ -207,10 +214,20 @@ body footer div.contact div.social {
   text-align: center;
 }
 .contenedor-dinamico input#opcion2:checked ~ div.opcion2 {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contenedor-dinamico input#opcion2:checked ~ div.opcion2 p {
+  text-align: center;
 }
 .contenedor-dinamico input#opcion3:checked ~ div.opcion3 {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contenedor-dinamico input#opcion3:checked ~ div.opcion3 p {
+  text-align: center;
 }
 .contenedor-dinamico label {
   width: 90%;
@@ -248,7 +265,7 @@ body footer div.contact div.social {
   flex-wrap: wrap;
 }
 .question label {
-  padding-bottom: 10px;
+  padding-bottom: 5%;
   border-bottom: 1px solid black;
   width: 100%;
 }
@@ -259,6 +276,8 @@ body footer div.contact div.social {
 .answer {
   display: none;
   margin-top: 20px;
+  padding-bottom: 5%;
+  border-bottom: 1px solid black;
 }
 
 input[name=answer]:checked + div {
@@ -286,16 +305,19 @@ input[name=answer]:checked + div {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border: 5px solid blue;
+  /* border:5px solid blue;*/
+  width: 100%;
 }
 .download-browsers .browser {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: 2px solid green;
-  margin: 2% 0;
-  padding: 15% 0;
+  /*border:2px solid green;*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 1% 0;
+  padding: 4% 0;
+  border-radius: 5%;
 }
 .download-browsers .browser img {
   margin: 10% 0;
@@ -313,6 +335,7 @@ input[name=answer]:checked + div {
   margin-top: 10px;
   color: white;
   text-align: center;
+  font-size: 1em;
 }
 
 .download {
@@ -320,4 +343,14 @@ input[name=answer]:checked + div {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+section.download div h2 {
+  text-align: center;
+  font-size: 2em;
+}
+section.download div p {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.7em;
 }/*# sourceMappingURL=styles.css.map */
