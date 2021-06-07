@@ -21,7 +21,7 @@ body {
 .c1 {
   /*border:1px solid red;*/
   width: 80%;
-  margin: 10px;
+  /*margin:10px;*/
 }
 
 .c2 {
@@ -62,6 +62,7 @@ header .navigation {
   font-size: 1.5em;
   font-weight: 500;
   margin-bottom: 5%;
+  text-align: center;
 }
 .general-text p {
   text-align: center;
@@ -260,6 +261,9 @@ header .navigation {
   /*margin-bottom: 30%;*/
 }
 
+footer {
+  width: 100%;
+}
 footer .form {
   color: white;
   background-color: #5368df;
@@ -334,16 +338,36 @@ footer .contact .logos {
 
   body {
     align-items: stretch;
+    border: 5px solid black;
   }
 
+  header {
+    margin: 50px 100px;
+  }
+  header .bookmark {
+    height: 50px;
+  }
   header .burger {
     display: none;
   }
   header .navigation {
-    border: 5px solid blue;
+    margin-right: 250px;
     display: flex;
     justify-content: space-around;
     width: 30%;
+  }
+  header .navigation button {
+    height: 50px;
+    width: 100px;
+    background-color: transparent;
+    border: 0 solid transparent;
+    border-radius: 10%;
+    font-size: 1em;
+  }
+  header .navigation button:hover {
+    background-color: #fa5757;
+    border-radius: 10%;
+    color: white;
   }
 
   .general-text {
@@ -379,6 +403,7 @@ footer .contact .logos {
     padding-left: 5%;
   }
   .simple .simple-text h1 {
+    margin-top: 0;
     width: 70%;
     font-size: 2.5em;
     text-align: left;
@@ -405,6 +430,7 @@ footer .contact .logos {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
   }
   .features .general-text h2 {
     font-size: 2.5em;
@@ -443,6 +469,7 @@ footer .contact .logos {
     margin-top: 5%;
   }
   .options input#opcion1:checked ~ div.tab1 .aside-image {
+    width: 40%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -451,7 +478,15 @@ footer .contact .logos {
   .options input#opcion1:checked ~ div.tab1 .aside-image p {
     text-align: left;
   }
+  .options input#opcion1:checked ~ div.tab1 .aside-image button {
+    width: 100px;
+    height: 50px;
+    background-color: #5368df;
+    color: white;
+    border-radius: 10%;
+  }
   .options input#opcion1:checked ~ div.tab1 .image-page {
+    width: 50%;
     margin-right: 2%;
   }
   .options input#opcion2:checked ~ div.tab2 {
@@ -461,6 +496,7 @@ footer .contact .logos {
     margin-top: 5%;
   }
   .options input#opcion2:checked ~ div.tab2 .aside-image {
+    width: 40%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -469,7 +505,15 @@ footer .contact .logos {
   .options input#opcion2:checked ~ div.tab2 .aside-image p {
     text-align: left;
   }
+  .options input#opcion2:checked ~ div.tab2 .aside-image button {
+    width: 100px;
+    height: 50px;
+    background-color: #5368df;
+    color: white;
+    border-radius: 10%;
+  }
   .options input#opcion2:checked ~ div.tab2 .image-page {
+    width: 50%;
     margin-right: 2%;
   }
   .options input#opcion3:checked ~ div.tab3 {
@@ -479,6 +523,7 @@ footer .contact .logos {
     margin-top: 5%;
   }
   .options input#opcion3:checked ~ div.tab3 .aside-image {
+    width: 40%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -487,7 +532,15 @@ footer .contact .logos {
   .options input#opcion3:checked ~ div.tab3 .aside-image p {
     text-align: left;
   }
+  .options input#opcion3:checked ~ div.tab3 .aside-image button {
+    width: 100px;
+    height: 50px;
+    background-color: #5368df;
+    color: white;
+    border-radius: 10%;
+  }
   .options input#opcion3:checked ~ div.tab3 .image-page {
+    width: 50%;
     margin-right: 2%;
   }
 
