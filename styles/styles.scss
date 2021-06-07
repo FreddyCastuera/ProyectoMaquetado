@@ -21,34 +21,36 @@ body{
 
 }
 .c1{
-    border:5px solid red;
+    /*border:1px solid red;*/
     width:80%;
     margin:10px;
 }
 .c2{
-    border:5px solid black;
-    margin:10px;
+   /*border:1px solid black;*/
+    /*margin:10px;*/
 }
 .c3{
-    border:5px solid blue;
+   /*border:1px solid blue;*/
     margin:10px;
 
 }
 .c4{
-    border:5px solid orange;
+    /*border:1px solid orange;*/
     margin:10px;
 }
 .c5{
-    border:5px solid purple;
+    /*border:1px solid purple;*/
     margin:10px;
 }
 header{
+    
     display: flex;
     justify-content: space-between;
     .navigation{
         display:none;
     }
 }
+
 .general-text{
     display:flex;
     flex-direction: column;
@@ -57,12 +59,13 @@ header{
     h2{
         font-size: 1.5em;
         font-weight: 500;
-
+        margin-bottom: 5%;
     }
     p{
         text-align: center;
         line-height: 1.5;
         font-weight: 400;
+        margin-bottom: 5%;
     }
 }
 
@@ -71,14 +74,30 @@ header{
     display:flex;
     flex-direction: column;
     justify-content: center;
+    margin-top:20%;
+    .image-table{
+        
+    }
+    .simple-text{
+        h1{
+            font-size: 1.5em;
+            text-align: center;
+            margin-top:15%;
+            margin-bottom: 7%;
+        }
+        p{
+            margin-bottom:7%;
+        }
+    }
 }
 .simple-buttons{
     display:flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    height: 70px;
+    height: 50px;
     button{
+        padding-top:3%;
         width: 47%;
         border-radius: 5%;
     }
@@ -91,17 +110,32 @@ header{
         margin-left:3%;
     }
 }
+
+.features{
+    margin-top:40%;
+}
+
+
 .container-image-aside{
     display:none;
 }
 .options{
     display:flex;
     flex-direction: column;
+    label:first-child{
+        border-top:1px solid grey;
+    }
     label{
         border-bottom:1px solid grey;
         text-align: center;
         padding-left:25%;
         padding-right:25%;
+        
+        p{
+            margin-top:10%;
+            padding-bottom:10%;
+        }
+        
         p:hover{
             border-bottom: 5px solid $Soft-Red;
         }
@@ -110,20 +144,31 @@ header{
         display:none;
     }
 
+
     input#opcion1:checked ~ div.tab1{
         display:flex;
         flex-direction: column;
         justify-content: center;
+        margin-top:15%;
+        img{
+            margin-bottom: 30%;
+        }
+
+        
     }
     input#opcion2:checked ~ div.tab2{
         display:flex;
         flex-direction: column;
         justify-content: center;
+        margin-top:15%;
+     
     }
     input#opcion3:checked ~ div.tab3{
         display:flex;
         flex-direction: column;
         justify-content: center;
+        margin-top:15%;
+    
     }
 }
 
@@ -132,12 +177,13 @@ header{
     display:flex;
     flex-direction: column;
     align-items: center;
+    margin-top:30%;
     .download-browsers{
         display:flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 1200px;
+        height: 1100px;
         width: 80%;
         .browser{
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -180,49 +226,72 @@ header{
     display:flex;
     flex-direction: column;
     align-items: center;
+    margin-top:40%;
+    .general-text{
+        h2{
+            width: 80%;
+            text-align: center;
+        }
+    }
     .questions{
         display:flex;
         flex-direction: column;
         align-items: space-between;
         width: 100%;
+        height: 600px;
         label{
-            padding-bottom: 5%;
+            padding: 5% 0;
             border-bottom: 1px solid grey;
+        }
+        input{
+            display: none;
         }
         p{
             display:none;
         }
         input#question1:checked + p{
-            display:block;
+            display:inline;
+            line-height: 2;
+            padding: 10% 0;
+            border-bottom: 1px solid grey;
         }
         input#question2:checked + p{
-            display:block;
-    
+            display:inline;
+            line-height: 2;    
+            padding: 10% 0;
+            border-bottom: 1px solid grey;
         }
         input#question3:checked + p{
-            display:block;
-    
+            display:inline;
+            line-height: 2;
+            padding: 10% 0;
+            border-bottom: 1px solid grey;
         }
         input#question4:checked + p{
-            display:block;
+            display:inline;
+            line-height: 2;
+            padding: 10% 0;
+            border-bottom: 1px solid grey;
         }
     }
     button{
         background-color: $Soft-Blue;
         color:white;
-        width:50%;
-        height: 70px;
+        width:40%;
+        height: 60px;
         border-radius: 5%;
-
+        margin-top:-20%;
+        margin-bottom: 30%;
     }
 }
 
 
 footer{
-    display: flex;
-    flex-direction: column;
+    
+
   
     .form{
+        
         color:white;
         background-color:$Soft-Blue;
         display:flex;
@@ -234,7 +303,7 @@ footer{
             letter-spacing: 0.3em;
         }
         h2{
-            width:100%;
+            width:80%;
             text-align: center;
         }
         input,button{
@@ -250,6 +319,7 @@ footer{
         }
     }
     .contact{
+        
         background-color: $Very-Dark-Blue;
         display:flex;
         flex-direction: column;
@@ -278,8 +348,12 @@ footer{
 
 
 @media screen and (min-width:1440px){
+    .c1{
+        width: 100%;
+    }
     body{
         background-color: chartreuse;
+        align-items: stretch;
     }
     header{
         .burger{

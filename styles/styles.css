@@ -19,28 +19,28 @@ body {
 }
 
 .c1 {
-  border: 5px solid red;
+  /*border:1px solid red;*/
   width: 80%;
   margin: 10px;
 }
 
 .c2 {
-  border: 5px solid black;
-  margin: 10px;
+  /*border:1px solid black;*/
+  /*margin:10px;*/
 }
 
 .c3 {
-  border: 5px solid blue;
+  /*border:1px solid blue;*/
   margin: 10px;
 }
 
 .c4 {
-  border: 5px solid orange;
+  /*border:1px solid orange;*/
   margin: 10px;
 }
 
 .c5 {
-  border: 5px solid purple;
+  /*border:1px solid purple;*/
   margin: 10px;
 }
 
@@ -61,17 +61,29 @@ header .navigation {
 .general-text h2 {
   font-size: 1.5em;
   font-weight: 500;
+  margin-bottom: 5%;
 }
 .general-text p {
   text-align: center;
   line-height: 1.5;
   font-weight: 400;
+  margin-bottom: 5%;
 }
 
 .simple {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 20%;
+}
+.simple .simple-text h1 {
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 15%;
+  margin-bottom: 7%;
+}
+.simple .simple-text p {
+  margin-bottom: 7%;
 }
 
 .simple-buttons {
@@ -79,9 +91,10 @@ header .navigation {
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  height: 70px;
+  height: 50px;
 }
 .simple-buttons button {
+  padding-top: 3%;
   width: 47%;
   border-radius: 5%;
 }
@@ -94,6 +107,10 @@ header .navigation {
   margin-left: 3%;
 }
 
+.features {
+  margin-top: 40%;
+}
+
 .container-image-aside {
   display: none;
 }
@@ -102,11 +119,18 @@ header .navigation {
   display: flex;
   flex-direction: column;
 }
+.options label:first-child {
+  border-top: 1px solid grey;
+}
 .options label {
   border-bottom: 1px solid grey;
   text-align: center;
   padding-left: 25%;
   padding-right: 25%;
+}
+.options label p {
+  margin-top: 10%;
+  padding-bottom: 10%;
 }
 .options label p:hover {
   border-bottom: 5px solid #fa5757;
@@ -118,29 +142,36 @@ header .navigation {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 15%;
+}
+.options input#opcion1:checked ~ div.tab1 img {
+  margin-bottom: 30%;
 }
 .options input#opcion2:checked ~ div.tab2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 15%;
 }
 .options input#opcion3:checked ~ div.tab3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 15%;
 }
 
 .download {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 30%;
 }
 .download .download-browsers {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 1200px;
+  height: 1100px;
   width: 80%;
 }
 .download .download-browsers .browser {
@@ -175,44 +206,63 @@ header .navigation {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 40%;
+}
+.frequently .general-text h2 {
+  width: 80%;
+  text-align: center;
 }
 .frequently .questions {
   display: flex;
   flex-direction: column;
   align-items: space-between;
   width: 100%;
+  height: 600px;
 }
 .frequently .questions label {
-  padding-bottom: 5%;
+  padding: 5% 0;
   border-bottom: 1px solid grey;
+}
+.frequently .questions input {
+  display: none;
 }
 .frequently .questions p {
   display: none;
 }
 .frequently .questions input#question1:checked + p {
-  display: block;
+  display: inline;
+  line-height: 2;
+  padding: 10% 0;
+  border-bottom: 1px solid grey;
 }
 .frequently .questions input#question2:checked + p {
-  display: block;
+  display: inline;
+  line-height: 2;
+  padding: 10% 0;
+  border-bottom: 1px solid grey;
 }
 .frequently .questions input#question3:checked + p {
-  display: block;
+  display: inline;
+  line-height: 2;
+  padding: 10% 0;
+  border-bottom: 1px solid grey;
 }
 .frequently .questions input#question4:checked + p {
-  display: block;
+  display: inline;
+  line-height: 2;
+  padding: 10% 0;
+  border-bottom: 1px solid grey;
 }
 .frequently button {
   background-color: #5368df;
   color: white;
-  width: 50%;
-  height: 70px;
+  width: 40%;
+  height: 60px;
   border-radius: 5%;
+  margin-top: -20%;
+  margin-bottom: 30%;
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
-}
 footer .form {
   color: white;
   background-color: #5368df;
@@ -226,7 +276,7 @@ footer .form p {
   letter-spacing: 0.3em;
 }
 footer .form h2 {
-  width: 100%;
+  width: 80%;
   text-align: center;
 }
 footer .form input, footer .form button {
@@ -264,8 +314,13 @@ footer .contact .link-list div a {
 }
 
 @media screen and (min-width: 1440px) {
+  .c1 {
+    width: 100%;
+  }
+
   body {
     background-color: chartreuse;
+    align-items: stretch;
   }
 
   header .burger {
