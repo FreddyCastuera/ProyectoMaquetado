@@ -76,8 +76,7 @@ header{
     flex-direction: column;
     justify-content: center;
     margin-top:20%;
-    .image-table{
-        
+
     }
     .simple-text{
         h1{
@@ -90,7 +89,7 @@ header{
             margin-bottom:7%;
         }
     }
-}
+
 .simple-buttons{
     display:flex;
     flex-direction: row;
@@ -121,6 +120,8 @@ header{
 .container-image-aside{
     display:none;
 }
+
+
 .options{
     display:flex;
     flex-direction: column;
@@ -152,12 +153,29 @@ header{
         flex-direction: column;
         justify-content: center;
         margin-top:15%;
+        button{
+            background-color: $Soft-Blue;
+            width: 150px;
+            height: 60px;
+            color:white;
+            border-radius: 10%;
+            display:none;
+        }
+        
     }
     input#opcion2:checked ~ div.tab2{
         display:flex;
         flex-direction: column;
         justify-content: center;
         margin-top:15%;
+        button{
+            background-color: $Soft-Blue;
+            width: 150px;
+            height: 60px;
+            color:white;
+            border-radius: 10%;
+            display:none;
+        }
      
     }
     input#opcion3:checked ~ div.tab3{
@@ -165,6 +183,14 @@ header{
         flex-direction: column;
         justify-content: center;
         margin-top:15%;
+        button{
+            background-color: $Soft-Blue;
+            width: 150px;
+            height: 60px;
+            color:white;
+            border-radius: 10%;
+            display:none;
+        }
     }
 }
 
@@ -499,11 +525,7 @@ footer{
                     text-align: left;
                 }
                 button{
-                    width: 100px;
-                    height: 50px;
-                    background-color: $Soft-Blue;
-                    color:white;
-                    border-radius: 10%;
+                    display:block;
                 }
             }
             .image-page{
@@ -526,11 +548,7 @@ footer{
                     text-align: left;
                 }
                 button{
-                    width: 100px;
-                    height: 50px;
-                    background-color: $Soft-Blue;
-                    color:white;
-                    border-radius: 10%;
+                    display:block;
                 }
             }
             .image-page{
@@ -553,11 +571,7 @@ footer{
                     text-align: left;
                 }
                 button{
-                    width: 100px;
-                    height: 50px;
-                    background-color: $Soft-Blue;
-                    color:white;
-                    border-radius: 10%;
+                  display:block;
                 }
             }
             .image-page{

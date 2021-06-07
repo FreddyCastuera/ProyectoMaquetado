@@ -77,13 +77,14 @@ header .navigation {
   justify-content: center;
   margin-top: 20%;
 }
-.simple .simple-text h1 {
+
+.simple-text h1 {
   font-size: 1.5em;
   text-align: center;
   margin-top: 15%;
   margin-bottom: 7%;
 }
-.simple .simple-text p {
+.simple-text p {
   margin-bottom: 7%;
 }
 
@@ -145,17 +146,41 @@ header .navigation {
   justify-content: center;
   margin-top: 15%;
 }
+.options input#opcion1:checked ~ div.tab1 button {
+  background-color: #5368df;
+  width: 150px;
+  height: 60px;
+  color: white;
+  border-radius: 10%;
+  display: none;
+}
 .options input#opcion2:checked ~ div.tab2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 15%;
 }
+.options input#opcion2:checked ~ div.tab2 button {
+  background-color: #5368df;
+  width: 150px;
+  height: 60px;
+  color: white;
+  border-radius: 10%;
+  display: none;
+}
 .options input#opcion3:checked ~ div.tab3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 15%;
+}
+.options input#opcion3:checked ~ div.tab3 button {
+  background-color: #5368df;
+  width: 150px;
+  height: 60px;
+  color: white;
+  border-radius: 10%;
+  display: none;
 }
 
 .download {
@@ -479,11 +504,7 @@ footer .contact .logos {
     text-align: left;
   }
   .options input#opcion1:checked ~ div.tab1 .aside-image button {
-    width: 100px;
-    height: 50px;
-    background-color: #5368df;
-    color: white;
-    border-radius: 10%;
+    display: block;
   }
   .options input#opcion1:checked ~ div.tab1 .image-page {
     width: 50%;
@@ -506,11 +527,7 @@ footer .contact .logos {
     text-align: left;
   }
   .options input#opcion2:checked ~ div.tab2 .aside-image button {
-    width: 100px;
-    height: 50px;
-    background-color: #5368df;
-    color: white;
-    border-radius: 10%;
+    display: block;
   }
   .options input#opcion2:checked ~ div.tab2 .image-page {
     width: 50%;
@@ -533,11 +550,7 @@ footer .contact .logos {
     text-align: left;
   }
   .options input#opcion3:checked ~ div.tab3 .aside-image button {
-    width: 100px;
-    height: 50px;
-    background-color: #5368df;
-    color: white;
-    border-radius: 10%;
+    display: block;
   }
   .options input#opcion3:checked ~ div.tab3 .image-page {
     width: 50%;
