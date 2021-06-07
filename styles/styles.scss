@@ -26,11 +26,11 @@ body{
     margin:10px;
 }
 .c2{
-   /*border:1px solid black;*/
+    /*border:5px solid black;*/
     /*margin:10px;*/
 }
 .c3{
-   /*border:1px solid blue;*/
+    /*border:1px solid blue;*/
     margin:10px;
 
 }
@@ -112,6 +112,7 @@ header{
 }
 
 .features{
+
     margin-top:40%;
 }
 
@@ -150,11 +151,6 @@ header{
         flex-direction: column;
         justify-content: center;
         margin-top:15%;
-        img{
-            margin-bottom: 30%;
-        }
-
-        
     }
     input#opcion2:checked ~ div.tab2{
         display:flex;
@@ -168,7 +164,6 @@ header{
         flex-direction: column;
         justify-content: center;
         margin-top:15%;
-    
     }
 }
 
@@ -277,11 +272,11 @@ header{
     button{
         background-color: $Soft-Blue;
         color:white;
-        width:40%;
+        width:100px;
         height: 60px;
         border-radius: 5%;
-        margin-top:-20%;
-        margin-bottom: 30%;
+        /*margin-top:-20%;*/
+        /*margin-bottom: 30%;*/
     }
 }
 
@@ -306,53 +301,65 @@ footer{
             width:80%;
             text-align: center;
         }
-        input,button{
+        .inputs{
             width: 80%;
-            height: 70px;
-            border-radius: 5%;
-            margin-left:  10%;
-            margin-right:  10%;
-        }
-        button{
-            background-color: $Soft-Red;
-            color:white;
+            input,button{
+                width: 100%;
+                height: 70px;
+                border-radius: 5%;
+                margin-left:  5px;
+                margin-right:  5px;
+            }
+            button{
+                background-color: $Soft-Red;
+                color:white;
+                margin-top: 10px;
+                margin-bottom: 30px;
+            }
         }
     }
     .contact{
-        
         background-color: $Very-Dark-Blue;
         display:flex;
         flex-direction: column;
         align-items: center;
-        .bookmark{
-            width: 60%;
-        }
-        .link-list{
+        .texto-fondo{
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
-            div{
-                margin: 15% 0;
-                a{
-                    color:white;
-                    text-decoration: none;
+            .bookmark{
+                width: 60%;
+            }
+            .link-list{
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                div{
+                    margin: 15% 0;
+                    a{
+                        color:white;
+                        text-decoration: none;
+                    }
                 }
             }
         }
-
+        .logos{
+            display: flex;
+            justify-content: space-between;
+            width:20%;
+        }
     }
 
 }
-
-
 
 @media screen and (min-width:1440px){
     .c1{
         width: 100%;
     }
     body{
-        background-color: chartreuse;
         align-items: stretch;
     }
     header{
@@ -366,29 +373,91 @@ footer{
             width: 30%;
         }
     }
+    .general-text{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        h2{
+            font-size: 1.5em;
+            font-weight: 500;
+            margin-bottom: 5%;
+        }
+        p{
+            text-align: center;
+            line-height: 1.5;
+            font-weight: 400;
+            margin-bottom: 5%;
+        }
+    }
 
     .simple{
         display:flex;
         flex-direction: row-reverse;
         justify-content: center;
+        margin-top:0;
         .simple-text{
             display:flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: flex-start;
+            padding-left:5%;
+            h1{
+                width: 70%;
+                font-size: 2.5em;
+                text-align: left;
+            }
+            p{
+                width: 70%;
+                font-size: 1.5em;
+                text-align: left;
+            }
+            .simple-buttons{
+                width: 50%;
+                font-size: 1em;
+                text-align: center;
+                
+            }
         }
+      
     }
-    .opcions{
+    .features{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    .general-text{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2{
+            font-size: 2.5em;
+            font-weight: 500;
+            margin-bottom: 5%;
+         }
+        p{
+            font-size: 1.5em;
+            text-align: center;
+            line-height: 1.5;
+            font-weight: 400;
+            margin-bottom: 5%;
+        }
+}
+        margin-top:0;
+    }
+    .options{
         display:flex;
         flex-direction: row;
         justify-content: center;  
+        label{
+            p{
+                font-size:2em;
+            }
+        }
 
     }
-    .container-image-aside{
-        display:flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+
     .container-image-aside{
         display:none;
     }
@@ -399,29 +468,78 @@ footer{
             display:flex;
             flex-direction: row;
             justify-content: center;
+            margin-top:5%;
+            .aside-image{
+                display:flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-left:2%;
+                p{
+                    text-align: left;
+                }
+            }
+            .image-page{
+                margin-right:2%;
+            }
+      
         }
         input#opcion2:checked ~ div.tab2{
             display:flex;
             flex-direction: row;
             justify-content: center;
+            margin-top:5%;
+            .aside-image{
+                display:flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-left:2%;
+                p{
+                    text-align: left;
+                }
+            }
+            .image-page{
+                margin-right: 2%;
+            }
         }
         input#opcion3:checked ~ div.tab3{
             display:flex;
             flex-direction: row;
             justify-content: center;
+            margin-top:5%;
+            .aside-image{
+                display:flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-left:2%;
+                p{
+                    text-align: left;
+                }
+            }
+            .image-page{
+                margin-right: 2%;
+            }
         }
     }
     .download{
         display:flex;
         flex-direction: column;
         align-items: center;
+        margin-top:0;
+        height: 900px;
+        div{
+            h2{
+                font-size: 2.5em;
+            }
+            p{
+                font-size: 1.5em;
+            }
+        }
         .download-browsers{
-
             display:flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-start;
-            height: 500px;
+            height: 700px;
             width: 90%;
             .browser{
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -456,15 +574,101 @@ footer{
         display:flex;
         flex-direction: column;
         align-items: center;
+        margin-top:0;
+        height: 1300px;
+        div{
+            h2{
+                font-size: 2.5em;
+            }
+            p{
+                font-size: 1.5em;
+            }
+        }
         .questions{
             display:flex;
             flex-direction: column;
             align-items: space-between;
-            width: 70%;
-      
+            width: 60%;
+            height: 900px;
+            label{
+                border-bottom: 1px solid grey;
+                font-size: 2em;
+            }
+            input{
+                display: none;
+            }
+            p{
+                display:none;
+            }
+            input#question1:checked + p{
+                display:inline;
+                line-height: 2;
+                border-bottom: 1px solid grey;
+                
+            }
+            input#question2:checked + p{
+                display:inline;
+                line-height: 2;    
+                border-bottom: 1px solid grey;
+            }
+            input#question3:checked + p{
+                display:inline;
+                line-height: 2;
+                border-bottom: 1px solid grey;
+            }
+            input#question4:checked + p{
+                display:inline;
+                line-height: 2;
+                border-bottom: 1px solid grey;
+            }
         }
+    }
+    footer{
+        .form{
+            p{
+                width: 50%;
+                font-size: 1.5em;
+                margin-top: 5%;
+            }
+            h2{
+                width: 50%;
+                font-size: 3em;
+            }
+            .inputs{
+                display: flex;
+                justify-content: center;
+                width: 50%;
+                input{
+                    width: 200%;
+                    margin-left:0;
+                    margin-right:5px;
+                }
+                button{
+                    width: 100%;
+                    margin-left:5px;
+                    margin-right: 0;
+                    margin-top: -1px;
+                }
+           
+            }
+        }
+        .contact{
+            flex-direction: row;
+            justify-content: space-around;
+            height: 100px;
+            .texto-fondo{
+                margin-left:-200px;
+                flex-direction: row;
+                .link-list{
+                    width: 500px;
+                    flex-direction: row;
+                }
+            }
+            .logos{
+                width: 100px;
+            }
     
-    
+        }
     }
 
 }
